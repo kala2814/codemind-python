@@ -1,8 +1,8 @@
 n=int(input())
-for i in range(1,n+1):
-    for j in range(1,n-1):
-        print(j,end='')
-    for k in range(1,n-2):
-        print(k,end='')
+for i in range(n):
+    for j in range(n-2):
+        print(j+1,end='')
+    for k in range(n-2,1,-1):
+        print(k-1,end='')
     print()
         
