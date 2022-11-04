@@ -1,7 +1,8 @@
 n=int(input())
-i=1
-while(i<=n):
-    for j in range(1,i+1):
-        print(j,end='')
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        if(j==1) or (i==n) or (j==i):
+            print("*",end="")
+        else:
+            print(" ",end="")
     print()
-    i+=1
